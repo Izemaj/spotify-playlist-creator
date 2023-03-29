@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billboard Top 100 Playlist Creator</title>
+
 </head>
 <body>
     <h1>Billboard Top 100 Playlist Creator</h1>
