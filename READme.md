@@ -14,6 +14,20 @@
         <li>Run the Python script and enter a date when prompted.</li>
         <li>The script will create a new private Spotify playlist with the name "{date} Billboard 100" and add the found songs to it.</li>
     </ol>
+    <h1>How the Script Works</h1>
+    <ol>
+      <li>The script starts by importing the necessary libraries: datetime, requests, BeautifulSoup, and spotipy.</li>
+      <li>The script prompts the user to enter a date in the format YYYY-MM-DD.</li>
+      <li>The script validates the user input and ensures that the entered date is not in the future.</li>
+      <li>The script constructs a URL to scrape the Billboard website for the Top 100 songs on the entered date.</li>
+      <li>The script sends a GET request to the URL using the requests library and parses the HTML content of the page using BeautifulSoup.</li>
+      <li>The script extracts the names of the top 100 songs from the parsed HTML using BeautifulSoup selectors.</li>
+      <li>The script logs into Spotify using the SpotifyOAuth class from the spotipy library, which authenticates the user and generates an access token for the Spotify Web API.</li>
+      <li>The script retrieves the user ID of the logged-in user from the Spotify Web API.</li>
+      <li>The script searches Spotify for each song extracted from the Billboard website using the Spotify Web API and adds the found songs to a list of song URIs.</li>
+      <li>The script creates a new private Spotify playlist with the name "{date} Billboard 100" using the Spotify Web API and adds the found songs to it using the playlist_add_items() method from the spotipy library.</li>
+      <li>The script completes execution, and the user can access the new Spotify playlist with the name "{date} Billboard 100".</li>
+    </ol>
     <h2>Requirements</h2>
     <ul>
         <li>Python 3.7 or higher</li>
